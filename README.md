@@ -1,54 +1,55 @@
-🕌 Islamic Prayer Times App
-A beautiful and modern Islamic prayer times application built with React.js frontend and Laravel backend. Features a stunning green and dark color theme with daily health tips and Quran verses.
+# 🕌 Islamic Prayer Times App
 
-https://img.shields.io/badge/React-18.2.0-blue https://img.shields.io/badge/Laravel-10.x-red https://img.shields.io/badge/Material--UI-5.x-green
+A **beautiful and modern Islamic prayer times application** built with **React.js** (frontend) and **Laravel** (backend).  
+It features a stunning **green & dark color theme**, along with **daily health tips** and **Quran verses** for spiritual and physical well-being.
 
-✨ Features
-🕋 Prayer Times
-Accurate Prayer Times: Fetched from Aladhan API
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![Laravel](https://img.shields.io/badge/Laravel-10.x-red)
+![Material UI](https://img.shields.io/badge/Material--UI-5.x-green)
 
-Multiple Locations: Support for cities worldwide
+---
 
-Real-time Updates: Automatic time updates
+## ✨ Features
 
-Beautiful Display: Clean, modern interface with prayer icons
+### 🕋 Prayer Times
+- **Accurate timings** fetched from [Aladhan API](https://aladhan.com/prayer-times-api)
+- **Multiple locations** with worldwide city support
+- **Real-time updates** and beautiful icons
+- **Clean and modern UI**
 
-💚 Daily Health
-Health Checklist: Daily wellness reminders
+### 💚 Daily Health
+- **Health checklist** with daily wellness reminders  
+- **Progress tracking** to maintain healthy habits  
+- **Motivational interface** for daily engagement  
 
-Progress Tracking: Track completed health goals
+### 📖 Daily Quran
+- **Inspirational Quranic verses** with Surah & Ayah references  
+- **Automatically refreshed daily**  
+- **Spiritual guidance** for a positive mindset  
 
-Motivational Design: Encourages healthy habits
+---
 
-📖 Daily Quran
-Inspirational Verses: Daily Quranic verses
+## 🎨 Design Highlights
+- Elegant **green & dark theme**
+- **Responsive design** for all devices  
+- Built with **Material-UI** components  
+- **Smooth animations** and hover effects  
 
-Reference Tracking: Complete with Surah and Ayah references
+---
 
-Spiritual Guidance: Curated selection of meaningful verses
+## 🚀 Quick Start
 
-🎨 Design
-Green & Dark Theme: Beautiful color combination
+### 🧩 Prerequisites
+- Node.js (v14+)
+- PHP (v8.1+)
+- Composer
+- MySQL
 
-Responsive Design: Works on all devices
+---
 
-Modern UI: Material-UI components with custom styling
+### 🖥 Backend Setup (Laravel)
 
-Smooth Animations: Hover effects and transitions
-
-🚀 Quick Start
-Prerequisites
-Node.js (v14 or higher)
-
-PHP (v8.1 or higher)
-
-Composer
-
-MySQL
-
-Installation
-Backend (Laravel)
-bash
+```bash
 # Clone the repository
 git clone https://github.com/yourusername/islamic-prayer-times.git
 cd islamic-prayer-times/backend
@@ -71,10 +72,11 @@ DB_PASSWORD=your_password
 # Run migrations
 php artisan migrate
 
-# Start server
+# Start Laravel server
 php artisan serve --port=8000
-Frontend (React)
+💻 Frontend Setup (React)
 bash
+Copy code
 cd ../frontend
 
 # Install dependencies
@@ -82,52 +84,30 @@ npm install
 
 # Start development server
 npm start
-The app will be available at:
+App will be available at:
 
-Frontend: http://localhost:3000
+Frontend → http://localhost:3000
 
-Backend API: http://localhost:8000
+Backend API → http://localhost:8000
 
 🛠️ Technology Stack
-Frontend
-React.js - UI framework
-
-Material-UI - Component library
-
-Axios - HTTP client
-
-Emotion - CSS-in-JS styling
-
-Backend
-Laravel - PHP framework
-
-MySQL - Database
-
-GuzzleHTTP - API requests
-
-CORS - Cross-origin resource sharing
-
-APIs
-Aladhan API - Prayer times data
-
-Geolocation API - Location services
+Layer	Technologies
+Frontend	React.js, Material-UI, Axios, Emotion
+Backend	Laravel, MySQL, GuzzleHTTP, CORS
+APIs	Aladhan API (Prayer Times), Geolocation API
 
 📁 Project Structure
-text
+bash
+Copy code
 islamic-prayer-times/
 ├── backend/
 │   ├── app/
-│   │   ├── Http/Controllers/
-│   │   │   └── PrayerTimeController.php
-│   │   ├── Models/
-│   │   │   └── PrayerTime.php
+│   │   ├── Http/Controllers/PrayerTimeController.php
+│   │   ├── Models/PrayerTime.php
 │   │   └── Providers/
-│   ├── database/
-│   │   └── migrations/
-│   ├── routes/
-│   │   └── api.php
-│   └── config/
-│       └── cors.php
+│   ├── database/migrations/
+│   ├── routes/api.php
+│   └── config/cors.php
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
@@ -140,49 +120,34 @@ islamic-prayer-times/
 │   └── package.json
 └── README.md
 🎯 Key Components
-Prayer Times Display
-Fajr, Dhuhr, Asr, Maghrib, Isha times
-
-Sunrise timing
+🕋 Prayer Times Display
+Fajr, Dhuhr, Asr, Maghrib, Isha, and Sunrise times
 
 Location-based calculations
 
-Real-time clock
+Real-time clock updates
 
-Location Management
-City selection dropdown
+📍 Location Management
+City and country selection
 
-Country support
+Manual and auto geolocation support
 
-Manual location update
+💚 Health Tracker
+Daily health goals and progress
 
-Automatic geolocation (optional)
+Motivational layout
 
-Health Tracker
-Daily health goals
+📖 Quran Section
+Daily verses with proper references
 
-Progress indicators
-
-Completion tracking
-
-Motivational design
-
-Quran Section
-Daily verse rotation
-
-Proper Arabic references
-
-Inspirational content
-
-Easy reading interface
+Easy reading and inspirational content
 
 🔧 Configuration
-Environment Variables
-Backend (.env)
+Backend .env
 env
+Copy code
 APP_NAME="Islamic Prayer Times"
 APP_ENV=local
-APP_KEY=
 APP_DEBUG=true
 APP_URL=http://localhost:8000
 
@@ -194,15 +159,15 @@ DB_USERNAME=root
 DB_PASSWORD=
 
 CORS_ALLOWED_ORIGINS=http://localhost:3000
-Frontend (.env)
+Frontend .env
 env
+Copy code
 REACT_APP_API_URL=http://localhost:8000/api
 REACT_APP_NAME="Islamic Prayer Times"
 🎨 Customization
 Color Theme
-The app uses a custom green and dark color palette:
-
 javascript
+Copy code
 primary: {
   main: '#2E7D32', // Dark Green
   light: '#4CAF50',
@@ -212,26 +177,26 @@ secondary: {
   main: '#66BB6A', // Light Green
 },
 background: {
-  default: '#0A0F0D', // Very Dark Green/Black
-  paper: '#1A231F', // Dark Green
+  default: '#0A0F0D', // Dark background
+  paper: '#1A231F',   // Dark green cards
 }
 Adding New Cities
-Edit the city dropdown in LocationSelector.js:
+In LocationSelector.js:
 
 javascript
+Copy code
 <MenuItem value="Mecca">Mecca</MenuItem>
 <MenuItem value="Madina">Madina</MenuItem>
 <MenuItem value="Dubai">Dubai</MenuItem>
 <MenuItem value="Cairo">Cairo</MenuItem>
-// Add more cities as needed
 📱 Responsive Design
-The application is fully responsive and works on:
+Fully optimized for:
 
 📱 Mobile phones
 
 💻 Tablets
 
-🖥️ Desktop computers
+🖥️ Desktops
 
 🖥️ Large screens
 
@@ -240,64 +205,56 @@ Method	Endpoint	Description
 GET	/api/prayer-times	Get daily prayer times
 GET	/api/prayer-times/monthly	Get monthly prayer times
 GET	/api/test	API health check
-🚀 Deployment
-Backend Deployment
-bash
-# Production build
-composer install --optimize-autoloader --no-dev
 
-# Cache configuration
+🚀 Deployment
+Backend (Laravel)
+bash
+Copy code
+composer install --optimize-autoloader --no-dev
 php artisan config:cache
 php artisan route:cache
-
-# Run migrations
 php artisan migrate --force
-Frontend Deployment
+Frontend (React)
 bash
-# Build for production
+Copy code
 npm run build
-
-# Serve built files
 npm install -g serve
 serve -s build
 🤝 Contributing
-We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.
+We welcome all contributions! 🙌
+To contribute:
 
-Development Guidelines
-Fork the repository
+Fork the repo
 
-Create a feature branch (git checkout -b feature/amazing-feature)
+Create a new branch (git checkout -b feature/amazing-feature)
 
-Commit your changes (git commit -m 'Add amazing feature')
+Commit changes (git commit -m "Add amazing feature")
 
-Push to the branch (git push origin feature/amazing-feature)
+Push the branch (git push origin feature/amazing-feature)
 
 Open a Pull Request
 
 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License – see the LICENSE file for details.
 
 🙏 Acknowledgments
-Aladhan API for providing accurate prayer times
+Aladhan API for prayer data
 
-Material-UI for the excellent component library
+Material-UI for UI components
 
 React.js and Laravel communities
 
 All contributors and testers
 
 📞 Support
-If you have any questions or need help with setup, please:
+For setup help or issues:
 
 Check the Issues page
 
-Create a new issue with detailed description
-
-Contact the development team
+Create a new issue with full details
 
 🌟 Star History
-If you find this project helpful, please consider giving it a star! ⭐
+If you find this project useful, please give it a ⭐ on GitHub!
 
 Made with ❤️ for the Muslim Ummah
-
-May Allah accept our prayers and good deeds
+May Allah accept our prayers and good deeds.
