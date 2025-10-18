@@ -74,6 +74,8 @@ php artisan migrate
 
 # Start Laravel server
 php artisan serve --port=8000
+
+```
 💻 Frontend Setup (React)
 bash
 Copy code
