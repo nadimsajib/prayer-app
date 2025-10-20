@@ -76,11 +76,10 @@ php artisan migrate
 php artisan serve --port=8000
 
 ```
-💻 Frontend Setup (React)
-bash
-Copy code
+### 💻 Frontend Setup (React)
+```bash
 cd ../frontend
-
+```
 # Install dependencies
 npm install
 
