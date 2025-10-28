@@ -1,4 +1,4 @@
-# 🕌 Islamic Prayer Times App
+# 🕌 Islamic Prayer Times App (Development)
 
 A **beautiful and modern Islamic prayer times application** built with **React.js** (frontend) and **Laravel** (backend).  
 It features a stunning **green & dark color theme**, along with **daily health tips** and **Quran verses** for spiritual and physical well-being.
