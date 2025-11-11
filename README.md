@@ -18,7 +18,7 @@ It features a stunning **green & dark color theme**, along with **daily health t
 - **Clean and modern UI**
 
 ### 💚 Daily Health
-- **Health checklist** with daily wellness reminders  
+- **Health checklist** with daily wellness reminders . 
 - **Progress tracking** to maintain healthy habits  
 - **Motivational interface** for daily engagement  
 
